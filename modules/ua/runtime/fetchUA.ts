@@ -2,7 +2,7 @@ import { Ref } from 'nuxt/dist/app/compat/capi';
 
 type Fetch = (url: string) => Promise<any>;
 
-export let UA = '';
+let UA = '';
 
 const fetchUA = async ($fetch: Fetch, apiUrl: string) => {
   const res = await $fetch(apiUrl);

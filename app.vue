@@ -1,9 +1,15 @@
 <template>
   <div>
-    UA: <output>{{ $ua }}</output>
+    <h1>UA:</h1>
+    <div>
+      <output>{{ $ua }}</output>
+    </div>
+    <div>
+      <output>{{ $count }}</output>
+    </div>
   </div>
 </template>
 
 <script setup>
-const { $ua } = useNuxtApp();
+const { $ua, $count } = useNuxtApp();
 </script>
