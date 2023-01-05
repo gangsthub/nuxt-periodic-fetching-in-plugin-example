@@ -1,5 +1,5 @@
 import { log } from 'console';
-import { getUA, UA } from './fetchUA';
+import { getUA } from './fetchUA';
 
 // initialised empty
 let UA = '';
