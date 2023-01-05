@@ -1,6 +1,6 @@
 import { Ref } from 'nuxt/dist/app/compat/capi';
 
-type Fetch = (url: string) => Promise<any>,
+type Fetch = (url: string) => Promise<any>;
 
 export let UA = '';
 
@@ -23,7 +23,5 @@ export const getUA = (
   $fetch: Fetch,
   apiUrl: string
 ): Promise<{ ua: string }> => {
-  
-
   return periodicFetchUA($fetch, apiUrl);
 };
