@@ -18,7 +18,7 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(moduleOptions, nuxt) {
     const { resolve } = createResolver(import.meta.url);
 
-    nuxt.options.runtimeConfig.public.uaBaseUrl = moduleOptions.baseUrl
+    nuxt.options.runtimeConfig.public.uaBaseUrl = moduleOptions.baseUrl!;
 
     addPlugin(resolve('./runtime/plugin'));
   },
